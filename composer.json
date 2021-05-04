@@ -1,0 +1,15 @@
+{
+    "name": "tsimeon/wp-heroku",
+    "description": "Fresh WordPress boilerplate for Heroku deployment",
+    "type": "boilerplate",
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+    },
+    "authors": [
+        {
+            "name": "Théo Siméon",
+            "email": "tsimeon.pro@gmail.com"
+        }
+    ],
+    "require": {}
+}
