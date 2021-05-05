@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Set WordPress files owner:group and permissions
+find . -maxdepth 1 \( \
+    -name "wp-*" -o \
+    -name "xmlrpc.php" -o \
+    -name "readme.html" -o \
+    -name "license.txt" -o \
+    -name "index.php" \) \
+    -exec sudo chown -R www-data:www-data {} \+ \
+    -exec sudo chmod -R -wx,u+rwX,g+rX,o+rX {} \+
